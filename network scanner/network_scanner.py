@@ -3,7 +3,6 @@
 import scapy.all as scp
 import argparse
 
-
 def scan(ip):
     arp_req = scp.ARP(pdst=ip)
     broadcast = scp.Ether(dst="ff:ff:ff:ff:ff:ff")
